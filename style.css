@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  background-color: rgb(193, 225, 193);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel {
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#paneltop {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(95, 138, 95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.elem {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elem .box {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 10px;
+  color: rgb(95, 138, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#panelbtm {
+  height: calc(100% - 100px);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(95, 138, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.bubble:hover {
+  background-color: rgb(60, 110, 60);
+}
+
+#panelbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  text-align: center;
+  font-size: 3vw;
+  color: rgb(95, 138, 95);
+}
+
+button {
+  background-color: rgb(95, 138, 95);
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(60, 110, 60);
+}
+
+@media only screen and (max-width: 600px) {
+  #paneltop {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
